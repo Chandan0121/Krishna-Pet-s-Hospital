@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Krishna Pet's Hospital</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5fbff;
+    }
+
+    header {
+      background-color: #00aaff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #0099dd;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #cceeff, #e0f7ff);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #0077aa;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #0077aa;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .service-box {
+      background-color: white;
+      border: 1px solid #cceeff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 2px 2px 8px #ddd;
+    }
+
+    .contact, .appointment {
+      background-color: #e6f7ff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+
+    .form-group {
+      margin: 10px auto;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #0077aa;
+    }
+
+    footer {
+      background-color: #0077aa;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dr. Krishna Pet's Hospital</h1>
+    <p>Care, Compassion & Cure for Your Beloved Pets</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Welcome to Dr. Krishna Pet's Hospital</h1>
+    <p>Trusted care in Baldevpuram, Mathura</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center;">
+      At Dr. Krishna Pet's Hospital, we are dedicated to providing compassionate veterinary care
+      to all kinds of pets. With a modern facility and experienced team, your pet's health is our priority.
+
+</p>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box">Vaccination</div>
+      <div class="service-box">General Checkup</div>
+      <div class="service-box">Surgery</div>
+      <div class="service-box">Grooming</div>
+      <div class="service-box">Emergency Care</div>
+    </div>
+  </div>
+
+  <div class="section appointment" id="appointment">
+    <h2>Book an Appointment</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Pet Owner's Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="service">Select Service</label>
+        <select id="service" required>
+          <option value="">-- Choose a service --</option>
+          <option>Vaccination</option>
+          <option>General Checkup</option>
+          <option>Surgery</option>
+          <option>Grooming</option>
+          <option>Emergency Care</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required />
+      </div>
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" required />
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Baldevpuram, Mathura, Uttar Pradesh</p>
+    <p><strong>Phone:</strong> <a href="tel:+918960384930">+91 89603 84930</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Dr. Krishna Pet's Hospital. All rights reserved.
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a class="whatsapp-float" href="https://wa.me/918960384930" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp"/>
+  </a>
+
+</body>
+</html>
