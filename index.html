@@ -18,18 +18,6 @@
       color: #333;
     }
 
-    /* Quote at top */
-    .quote {
-      font-family: "Times New Roman", serif;
-      font-style: italic;
-      font-size: 1.1em;
-      color: black;
-      text-align: center;
-      padding: 15px 20px;
-      background-color: #c7f9cc;
-      margin: 0;
-    }
-
     header {
       background-color: #b2f2bb;
       padding: 20px;
@@ -63,7 +51,15 @@
       color: #555;
     }
 
-    /* Hamburger toggle */
+    .quote {
+      font-family: "Times New Roman", serif;
+      font-style: italic;
+      font-size: 1.1em;
+      color: black;
+      text-align: center;
+      margin-top: 5px;
+    }
+
     .menu-toggle {
       display: none;
     }
@@ -78,11 +74,11 @@
       border-radius: 5px;
       transition: background-color 0.3s;
     }
+
     .menu-icon:hover {
       background-color: #c2f0c2;
     }
 
-    /* Navigation */
     nav {
       width: 100%;
       background-color: #e1fae3;
@@ -123,22 +119,33 @@
       border-bottom: 2px solid #2e8b57;
     }
 
-    /* Responsive hamburger */
     @media (max-width: 768px) {
       .menu-icon {
         display: block;
       }
+
       nav ul {
         display: none;
         flex-direction: column;
         align-items: flex-start;
         padding-left: 20px;
       }
+
       .menu-toggle:checked + .menu-icon + nav ul {
         display: flex;
       }
+
       nav li {
         margin: 10px 0;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      .logo {
+        position: static;
+        margin-bottom: 10px;
       }
     }
 
@@ -209,9 +216,11 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: transform 0.3s ease; z-index: 1000;
     }
+
     .whatsapp-float:hover {
       transform: scale(1.1);
     }
+
     .whatsapp-float img {
       width: 52px; height: 52px;
     }
@@ -219,25 +228,18 @@
 </head>
 <body>
 
-  <!-- QUOTE AT TOP -->
-  <div class="quote">
-    “Vet care with a heart — because they’re not just pets, they’re family.”
-  </div>
-
-  <!-- HEADER -->
   <header>
     <img src="logo.jpg" alt="Logo" class="logo"/>
     <div class="header-center">
       <h1>Dr. Krishna Pet's Hospital</h1>
       <div class="tagline">Caring for your pets like family</div>
+      <div class="quote">“Vet care with a heart — because they’re not just pets, they’re family.”</div>
     </div>
   </header>
 
-  <!-- HAMBURGER TOGGLE & MENU ICON -->
   <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
   <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-  <!-- NAVIGATION -->
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -252,13 +254,11 @@
   </nav>
 
   <div class="content">
-    <!-- About -->
     <section class="section" id="about">
       <h2>About Us</h2>
       <p>Dr. Krishna Pet's Hospital has been dedicated to providing comprehensive veterinary care in Mathura. Our experienced team handles surgery, grooming, vaccinations, and emergency cases.</p>
     </section>
 
-    <!-- Services -->
     <section class="section" id="services">
       <h2>Our Services</h2>
       <ul>
@@ -270,20 +270,17 @@
       </ul>
     </section>
 
-    <!-- Hours -->
     <section class="section" id="hours">
       <h2>Opening Hours</h2>
       <p><strong>Mon–Sat:</strong> 10 AM–10 PM<br><strong>Sun:</strong> Closed</p>
     </section>
 
-    <!-- Testimonials -->
     <section class="section" id="testimonials">
       <h2>Testimonials</h2>
       <div class="testimonial">"Amazing care! My dog recovered quickly after surgery." – Priya S.</div>
       <div class="testimonial">"Very clean and friendly staff. Highly recommend!" – Rohit M.</div>
     </section>
 
-    <!-- Gallery -->
     <section class="section" id="gallery">
       <h2>Our Gallery</h2>
       <div class="gallery">
@@ -293,7 +290,6 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section class="section" id="contact">
       <h2>Contact Us</h2>
       <p>📞 +91 89603 84930</p>
@@ -301,7 +297,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
     </section>
 
-    <!-- Appointment -->
     <section class="section" id="appointment">
       <h2>Book an Appointment</h2>
       <div class="g-form-container">
@@ -312,9 +307,8 @@
     </section>
   </div>
 
-  <!-- WhatsApp Button -->
   <a href="https://wa.me/918960384930" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="whatsapp-icon.png" alt="WhatsApp"/>
+    <img src="whatsapp-icon.png" alt="Chat on WhatsApp"/>
   </a>
 
 </body>
