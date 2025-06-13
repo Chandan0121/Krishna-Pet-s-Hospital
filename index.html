@@ -51,7 +51,20 @@
       color: #555;
     }
 
-    /* Hamburger Menu */
+    .quote-box {
+      background-color: #c7f9cc;
+      padding: 20px;
+      text-align: right;
+      font-family: "Times New Roman", serif;
+    }
+
+    .quote-box blockquote {
+      font-size: 1.2em;
+      color: white;
+      font-style: italic;
+      margin: 0;
+    }
+
     .menu-toggle {
       display: none;
     }
@@ -63,7 +76,14 @@
       padding: 10px 20px;
       color: #2e8b57;
       background-color: #e1fae3;
-      text-align: right;
+      text-align: left;
+    }
+
+    .menu-icon.left {
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 100px;
     }
 
     nav {
@@ -75,7 +95,6 @@
       position: sticky;
       top: 0;
       z-index: 999;
-      text-align: center;
     }
 
     nav ul {
@@ -105,16 +124,13 @@
       border-bottom: 2px solid #2e8b57;
     }
 
-    /* Responsive Hamburger */
     @media (max-width: 768px) {
-      .menu-icon {
-        display: block;
-      }
-
       nav ul {
         display: none;
         flex-direction: column;
+        align-items: flex-start;
         background-color: #e1fae3;
+        padding-left: 20px;
       }
 
       .menu-toggle:checked + .menu-icon + nav ul {
@@ -123,6 +139,15 @@
 
       nav li {
         margin: 10px 0;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      .logo {
+        position: static;
+        margin-bottom: 10px;
       }
     }
 
@@ -209,22 +234,6 @@
       width: 52px;
       height: 52px;
     }
-
-    @media (max-width: 600px) {
-      .section {
-        margin: 10px;
-        padding: 15px;
-      }
-
-      header {
-        flex-direction: column;
-      }
-
-      .logo {
-        position: static;
-        margin-bottom: 10px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -237,9 +246,16 @@
     </div>
   </header>
 
-  <!-- Hamburger Menu -->
+  <!-- QUOTE SECTION -->
+  <section class="quote-box">
+    <blockquote>
+      “Vet care with a heart — because they’re not just pets, they’re family.”
+    </blockquote>
+  </section>
+
+  <!-- HAMBURGER MENU -->
   <input type="checkbox" id="menu-toggle" class="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <label for="menu-toggle" class="menu-icon left">&#9776;</label>
 
   <nav>
     <ul>
