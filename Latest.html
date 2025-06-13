@@ -1,98 +1,105 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Krishna Pet's Hospital</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #e0f7fa;
+      background: #e6f2ff;
       color: #333;
     }
+
     header {
-      background-color: #b3e5fc;
+      background: #ffffff;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 10px 20px;
-    }
-    header img {
-      height: 60px;
-      margin-right: 20px;
-    }
-    header h1 {
-      margin: 0 auto;
-      font-size: 24px;
-      color: #01579b;
-    }
-    .section {
-      background-color: #ffffff;
-      border-radius: 10px;
-      margin: 20px;
-      padding: 20px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
+    .logo {
+      height: 60px;
+    }
+
+    .title {
+      flex: 1;
+      text-align: center;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #1f4e79;
+    }
+
+    .title p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
     h2 {
-      color: #0277bd;
+      color: #1f4e79;
     }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #25d366;
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #1f4e79;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 8px;
-      margin: 8px 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    form button {
-      background-color: #0288d1;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #0277bd;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.jpg" alt="Dr. Krishna Pet's Hospital Logo" />
-    <h1>Dr. Krishna Pet's Hospital</h1>
-  </header>  <div class="section">
-    <p style="text-align: center; font-style: italic;">Caring for your pets like family</p>
-  </div>  <div class="section">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Vaccination</li>
-      <li>General Checkup</li>
-      <li>Surgery</li>
-      <li>Grooming</li>
-      <li>Emergency Care</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>Contact Us</h2>
-    <p>📞 +91 89603 84930</p>
-    <p>📍 Baldevpuram, Mathura, Uttar Pradesh</p>
-    <a class="whatsapp-button" href="https://wa.me/918960384930" target="_blank">Chat on WhatsApp</a>
-  </div>  <div class="section">
-    <h2>Book an Appointment</h2>
-    <form action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      <textarea name="message" rows="4" placeholder="Describe your pet's issue" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
+    <img src="logo.jpg" alt="Hospital Logo" class="logo" />
+    <div class="title">
+      <h1>Dr. Krishna Pet's Hospital</h1>
+      <p>Caring for your pets like family</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Vaccination</li>
+        <li>General Checkup</li>
+        <li>Surgery</li>
+        <li>Grooming</li>
+        <li>Emergency Care</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>📞 +91 89603 84930</p>
+      <p>📍 Prayagraj, Uttar Pradesh</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Dr. Krishna Pet's Hospital. All rights reserved.
+  </footer>
 </body>
 </html>
