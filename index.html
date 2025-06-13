@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dr. Krishna Pet's Hospital</title>
 
   <meta name="description" content="Dr. Krishna Pet's Hospital - Caring veterinary services including surgery, grooming, emergency care in Mathura. Book appointments easily.">
@@ -16,6 +16,18 @@
       margin: 0;
       padding: 0;
       color: #333;
+    }
+
+    /* Quote at top */
+    .quote {
+      font-family: "Times New Roman", serif;
+      font-style: italic;
+      font-size: 1.1em;
+      color: black;
+      text-align: center;
+      padding: 15px 20px;
+      background-color: #c7f9cc;
+      margin: 0;
     }
 
     header {
@@ -51,20 +63,7 @@
       color: #555;
     }
 
-    .quote-box {
-      background-color: #c7f9cc;
-      padding: 20px;
-      text-align: right;
-      font-family: "Times New Roman", serif;
-    }
-
-    .quote-box blockquote {
-      font-size: 1.2em;
-      color: white;
-      font-style: italic;
-      margin: 0;
-    }
-
+    /* Hamburger toggle */
     .menu-toggle {
       display: none;
     }
@@ -73,24 +72,24 @@
       display: none;
       font-size: 28px;
       cursor: pointer;
-      padding: 10px 20px;
+      padding: 8px 12px;
       color: #2e8b57;
       background-color: #e1fae3;
-      text-align: left;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .menu-icon:hover {
+      background-color: #c2f0c2;
     }
 
-    .menu-icon.left {
-      display: block;
-      position: absolute;
-      left: 20px;
-      top: 100px;
-    }
-
+    /* Navigation */
     nav {
       width: 100%;
       background-color: #e1fae3;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 10px 0;
       position: sticky;
       top: 0;
@@ -99,15 +98,15 @@
 
     nav ul {
       list-style: none;
-      padding: 0;
       margin: 0;
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
 
     nav li {
-      margin: 10px 15px;
+      margin: 0 15px;
     }
 
     nav a {
@@ -124,30 +123,22 @@
       border-bottom: 2px solid #2e8b57;
     }
 
+    /* Responsive hamburger */
     @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
       nav ul {
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        background-color: #e1fae3;
         padding-left: 20px;
       }
-
       .menu-toggle:checked + .menu-icon + nav ul {
         display: flex;
       }
-
       nav li {
         margin: 10px 0;
-      }
-
-      header {
-        flex-direction: column;
-      }
-
-      .logo {
-        position: static;
-        margin-bottom: 10px;
       }
     }
 
@@ -156,12 +147,12 @@
     }
 
     .section {
-      background-color: #ffffff;
+      background-color: #fff;
       padding: 20px;
       margin: 20px auto;
       max-width: 800px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .section h2 {
@@ -178,7 +169,7 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
       gap: 15px;
     }
 
@@ -186,7 +177,7 @@
       width: 100%;
       height: auto;
       border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
     }
 
@@ -203,60 +194,50 @@
 
     .responsive-iframe {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       border: none;
     }
 
     .whatsapp-float {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 80px;
-      height: 80px;
+      bottom: 20px; right: 20px;
+      width: 80px; height: 80px;
       background-color: #25D366;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-      transition: transform 0.3s ease;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease; z-index: 1000;
     }
-
     .whatsapp-float:hover {
       transform: scale(1.1);
     }
-
     .whatsapp-float img {
-      width: 52px;
-      height: 52px;
+      width: 52px; height: 52px;
     }
   </style>
 </head>
 <body>
 
+  <!-- QUOTE AT TOP -->
+  <div class="quote">
+    “Vet care with a heart — because they’re not just pets, they’re family.”
+  </div>
+
+  <!-- HEADER -->
   <header>
-    <img src="logo.jpg" alt="Logo" class="logo" />
+    <img src="logo.jpg" alt="Logo" class="logo"/>
     <div class="header-center">
       <h1>Dr. Krishna Pet's Hospital</h1>
       <div class="tagline">Caring for your pets like family</div>
     </div>
   </header>
 
-  <!-- QUOTE SECTION -->
-  <section class="quote-box">
-    <blockquote>
-      “Vet care with a heart — because they’re not just pets, they’re family.”
-    </blockquote>
-  </section>
+  <!-- HAMBURGER TOGGLE & MENU ICON -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-  <!-- HAMBURGER MENU -->
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
-  <label for="menu-toggle" class="menu-icon left">&#9776;</label>
-
+  <!-- NAVIGATION -->
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -271,12 +252,14 @@
   </nav>
 
   <div class="content">
-    <div class="section" id="about">
+    <!-- About -->
+    <section class="section" id="about">
       <h2>About Us</h2>
       <p>Dr. Krishna Pet's Hospital has been dedicated to providing comprehensive veterinary care in Mathura. Our experienced team handles surgery, grooming, vaccinations, and emergency cases.</p>
-    </div>
+    </section>
 
-    <div class="section" id="services">
+    <!-- Services -->
+    <section class="section" id="services">
       <h2>Our Services</h2>
       <ul>
         <li>Vaccination</li>
@@ -285,47 +268,53 @@
         <li>Grooming</li>
         <li>Emergency Care</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section" id="hours">
+    <!-- Hours -->
+    <section class="section" id="hours">
       <h2>Opening Hours</h2>
-      <p><strong>Mon–Sat:</strong> 10 AM – 10 PM<br><strong>Sun:</strong> Closed</p>
-    </div>
+      <p><strong>Mon–Sat:</strong> 10 AM–10 PM<br><strong>Sun:</strong> Closed</p>
+    </section>
 
-    <div class="section" id="testimonials">
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
       <h2>Testimonials</h2>
       <div class="testimonial">"Amazing care! My dog recovered quickly after surgery." – Priya S.</div>
       <div class="testimonial">"Very clean and friendly staff. Highly recommend!" – Rohit M.</div>
-    </div>
+    </section>
 
-    <div class="section" id="gallery">
+    <!-- Gallery -->
+    <section class="section" id="gallery">
       <h2>Our Gallery</h2>
       <div class="gallery">
         <img src="01.JPG" alt="Operation Theatre">
         <img src="02.jpg" alt="Post-Surgery Care">
         <img src="03.JPG" alt="Surgical Procedure">
       </div>
-    </div>
+    </section>
 
-    <div class="section" id="contact">
+    <!-- Contact -->
+    <section class="section" id="contact">
       <h2>Contact Us</h2>
       <p>📞 +91 89603 84930</p>
       <p>📍 Baldevpuram, Mathura, Uttar Pradesh</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
-    </div>
+    </section>
 
-    <div class="section" id="appointment">
+    <!-- Appointment -->
+    <section class="section" id="appointment">
       <h2>Book an Appointment</h2>
       <div class="g-form-container">
         <iframe class="responsive-iframe"
           src="https://docs.google.com/forms/d/e/1FAIpQLSfGlWJ-sSpEY9z3V4NWlE7mmdNwaGqZ46rKaJlBIPmp7M_jMA/viewform?embedded=true"
           loading="lazy">Loading…</iframe>
       </div>
-    </div>
+    </section>
   </div>
 
+  <!-- WhatsApp Button -->
   <a href="https://wa.me/918960384930" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-    <img src="whatsapp-icon.png" alt="Chat on WhatsApp" />
+    <img src="whatsapp-icon.png" alt="WhatsApp"/>
   </a>
 
 </body>
