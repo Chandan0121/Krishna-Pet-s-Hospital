@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Krishna Pet's Hospital</title>
+
+  <!-- ✅ SEO Meta Tags -->
+  <meta name="description" content="Dr. Krishna Pet's Hospital - Caring veterinary services including surgery, grooming, emergency care in Mathura. Book appointments easily.">
+  <meta name="keywords" content="Pet Hospital, Vet, Surgery, Grooming, Emergency Care, Mathura, Appointment">
+  <meta name="author" content="Dr. Krishna Pet's Hospital">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #b3e0ff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+    }
+
+    h1 {
+      color: #004d66;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 1.1em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    nav {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav li {
+      margin: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004d66;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #007399;
+    }
+
+    .testimonial {
+      background: #f0f8ff;
+      padding: 10px;
+      border-left: 4px solid #007399;
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Google Form Responsive Embed */
+    .g-form-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 125%;
+    }
+
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 52px;
+      height: 52px;
+    }
+
+    @media (max-width: 600px) {
+      .section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Dr. Krishna Pet's Hospital Logo" />
+    <div>
+      <h1>Dr. Krishna Pet's Hospital</h1>
+      <div class="tagline">Caring for your pets like family</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#appointment">Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>Dr. Krishna Pet's Hospital has been dedicated to providing comprehensive veterinary care in Mathura. Our experienced team handles surgery, grooming, vaccinations, and emergency cases.</p>
+    </div>
+
+    <div class="section" id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Vaccination</li>
+        <li>General Checkup</li>
+        <li>Surgery</li>
+        <li>Grooming</li>
+        <li>Emergency Care</li>
+      </ul>
+    </div>
+
+    <div class="section" id="hours">
+      <h2>Opening Hours</h2>
+      <p><strong>Mon–Sat:</strong> 10 AM – 10 PM<br><strong>Sun:</strong> Closed</p>
+    </div>
+
+    <div class="section" id="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial">"Amazing care! My dog recovered quickly after surgery." – Priya S.</div>
+      <div class="testimonial">"Very clean and friendly staff. Highly recommend!" – Rohit M.</div>
+    </div>
+
+    <div class="section" id="gallery">
+      <h2>Our Gallery</h2>
+      <div class="gallery">
+        <img src="01.JPG" alt="Operation Theatre">
+        <img src="02.jpg" alt="Post-Surgery Care">
+        <img src="03.JPG" alt="Surgical Procedure">
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>📞 +91 89603 84930</p>
+      <p>📍 Baldevpuram, Mathura, Uttar Pradesh</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <div class="section" id="appointment">
+      <h2>Book an Appointment</h2>
+      <div class="g-form-container">
+        <iframe class="responsive-iframe"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfGlWJ-sSpEY9z3V4NWlE7mmdNwaGqZ46rKaJlBIPmp7M_jMA/viewform?embedded=true"
+          loading="lazy">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918960384930" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="whatsapp-icon.png" alt="Chat on WhatsApp" />
+  </a>
+
+</body>
+</html>
