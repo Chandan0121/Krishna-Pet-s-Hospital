@@ -27,18 +27,13 @@
       position: relative;
       flex-wrap: wrap;
       text-align: center;
+      flex-direction: column;
     }
 
     .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
       width: 80px;
       height: auto;
-    }
-
-    .header-center {
-      flex-grow: 1;
+      margin-bottom: 10px;
     }
 
     h1 {
@@ -54,10 +49,10 @@
     .quote {
       font-family: "Times New Roman", serif;
       font-style: italic;
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: black;
       text-align: center;
-      margin-top: 5px;
+      margin-top: 10px;
     }
 
     .menu-toggle {
@@ -144,7 +139,6 @@
       }
 
       .logo {
-        position: static;
         margin-bottom: 10px;
       }
     }
@@ -230,11 +224,9 @@
 
   <header>
     <img src="logo.jpg" alt="Logo" class="logo"/>
-    <div class="header-center">
-      <h1>Dr. Krishna Pet's Hospital</h1>
-      <div class="tagline">Caring for your pets like family</div>
-      <div class="quote">“Vet care with a heart — because they’re not just pets, they’re family.”</div>
-    </div>
+    <h1>Dr. Krishna Pet's Hospital</h1>
+    <div class="tagline">Caring for your pets like family</div>
+    <div class="quote">“Vet care with a heart — because they’re not just pets, they’re family.”</div>
   </header>
 
   <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
